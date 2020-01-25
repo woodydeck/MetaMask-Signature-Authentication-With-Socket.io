@@ -1,0 +1,19 @@
+{
+    "name": "server.js",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "ethereumjs-util": "^6.2.0",
+        "jwt-decode": "^2.2.0",
+        "mysql": "^2.17.1",
+        "njwt": "^1.0.0",
+        "socket.io": "^2.3.0",
+    }
+}
