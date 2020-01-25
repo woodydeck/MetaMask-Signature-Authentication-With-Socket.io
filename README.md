@@ -4,7 +4,7 @@ This barebones project shows how to use MetaMask for login and socket.io authent
 
 You will need Node.js, MySQL, and a web server as MetaMask will not work without one. The project by default is configured for use over localhost. I use XAMPP on MacOS as a local test server.
 
-***Node.js:***
+***Node.js***
 
 The dependencies are noted in the server.js file as well as the package.json which has the version numbers I used in case another intrepid open source crypto decides to break something on a stereotypical know-it-all whim.
 
