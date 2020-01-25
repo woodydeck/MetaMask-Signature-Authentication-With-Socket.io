@@ -5,14 +5,17 @@ This barebones project shows how to use MetaMask for login and socket.io authent
 You will need Node.js, MySQL, and a web server as MetaMask will not work without one. The project by default is configured for use over localhost. I use XAMPP on MacOS as a local test server.
 
 ***Node.js:***
+
 The dependencies are noted in the server.js file as well as the package.json which has the version numbers I used in case another intrepid open source crypto decides to break something on a stereotypical know-it-all whim.
 
 Please note that web3 is not needed on the backend for this implementation as we are only using the message signing functionality of MetaMask. If you are going to do things like check for transactions or event, then you will need web3 on the server-side.
 
 ***Frontend***
+
 The index.html loads jQuery, and the socket.io library. The frontend.js script is loaded last. In 2020, MetaMask will stop injecting web3.js, so you will need to load web3 yourself. This has been poorly communicated, so don't get frustrated if things don't work right away. Please take your anger out on the entitled millennials developing their shitcode for being disorganized, not me.
 
 ***MySQL***
+
 I use MySQL because it is well documented and works. Feel free to live life exciting and free with MongoDB if you must, but you will have to fork and refactor.
 
 You will need two separate tables. One is the user table. Here you just store a 42 character varchar of the Ethereum address of the user. If you are making a game, you would put points, balances, and other things here too. The address column is indexed as unique.
