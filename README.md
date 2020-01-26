@@ -8,7 +8,7 @@ You will need Node.js, MySQL, and a web server as MetaMask will not work without
 
 The dependencies are noted in the server.js file as well as the package.json which has the version numbers I used in case another intrepid open source crypto decides to break something on a stereotypical know-it-all whim.
 
-Please note that web3 is not needed on the backend for this implementation as we are only using the message signing functionality of MetaMask. If you are going to do things like check for transactions or event, then you will need web3 on the server-side.
+Please note that web3 is not needed on the backend for this implementation as we are only using the message signing functionality of MetaMask. If you are going to do things like check for transactions or events, then you will need web3 on the server-side.
 
 ***Frontend***
 
