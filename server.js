@@ -85,7 +85,7 @@ io.on("connection", function (socket) {
       })
     } else {
       //Error handling for callback #1.
-      socket.emit("popupalert", "Something went wrong when fetching a nonce. Message #2")
+      socket.emit("popupalert", "Something went wrong when fetching a nonce. Are you logged into MetaMask?")
       return socket.emit("notloggedin")
     }
   })
