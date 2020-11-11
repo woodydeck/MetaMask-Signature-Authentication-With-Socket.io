@@ -18,7 +18,7 @@ The index.html loads jQuery, and the socket.io library. The frontend.js script i
 
 I use MySQL because it is well documented and works. Feel free to live life exciting and free with MongoDB if you must, but you will have to fork and refactor.
 
-There is a script in db folder to create database
+(If you prefer, there is now a script in db folder to create a MySql database.)
 
 You will need two separate tables. One is the user table. Here you just store a 42 character varchar of the Ethereum address of the user. If you are making a game, you would put points, balances, and other things here too. The address column is indexed as unique.
 
