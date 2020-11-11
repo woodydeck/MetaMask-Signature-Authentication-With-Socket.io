@@ -1,6 +1,17 @@
 //Instantiate the socket.io connection. The dependency is loaded in html.
 const socket = io.connect("http://localhost:3000")
 
+//window.ethereum.enable(); //deprecated
+try {
+  const accounts = ethereum.send('eth_requestAccounts');  
+} catch (error) {
+  alert('User denied account access');
+}
+
+//ethereum.send('eth_sendTransaction', { from: accounts[0], /* ... */ })
+
+ethereum.autoRefreshOnNetworkChange = false;
+
 //Requests a nonce from the server, signs it, and then emits it once signed with MetaMask.
 $('#loginButton').click(function () {
   if ($('#loginButton').text() == 'Login') { signMessage() }
