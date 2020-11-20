@@ -43,7 +43,7 @@ function verifyToken(token) {
 }
 
 function validateMessage(nonce, signature) {
-  //Make sure the function is returning the correct address. It can return an incorrect one if this function is musconfigured.
+  //Make sure the function is returning the correct address. It can return an incorrect one if this function is misconfigured.
   if (signature != undefined && nonce != undefined) {
     nonce = "\x19Ethereum Signed Message:\n" + nonce.length + nonce
     nonce = util.keccak(nonce)
